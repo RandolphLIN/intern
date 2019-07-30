@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+    <!--屏幕-->
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=0"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  
+	<title>功能介绍</title>
+
+	<link type="text/css" rel="stylesheet" href="css/mob.css" />
+	<link rel="stylesheet" href="css/swiper.min.css"><!-- 滑动展示样式 -->
+ 	<link type="text/css" rel="stylesheet" href="css/dekaron.css" /><!-- 小车展开 -->
+	<script type="text/javascript" src="js/swiper.min.js"></script><!-- 小车展开 -->
+
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script><!-- 小车展开 -->
+    <script type="text/javascript" src="js/fastclick.js"></script>
+
+    <script type="text/javascript" src="js/jquery.transit.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script><!-- 小车展开 -->
+
+
+</head>
+<body>
+	
+
+	<nav id="menu">
+		<ul class="one">
+            <li><a href="home.html" >首页</a></li>
+            <li><a href="function.html" >功能亮点</a></li>
+            <li><a href="film.html" >视听影音</a></li>
+            <li><a href="news.html" >挑战达喀尔</a></li>
+            <li><a href="" >预约试驾</a></li>
+        </ul>
+        <ul class="two">
+            <li><a href="" >在线订车</a></li>
+            <li><a href="" >参数配置</a></li>
+        </ul>
+	</nav> 
+
+ <div class="wrap">       
+        <div class="header">
+            <a href="javascript:;" class="menu-btn"></a>
+            <div id="logoBox">
+                <a class="logo" href="home.html">
+                  <img src="img/logo-1.png" alt="">
+                </a>
+                <a class="logo1" href="" style="display:none;">
+                  <img src="img/logo-2.png" alt="">
+                </a>    
+            </div>
+            <ul class="nav">
+                <li class="frist"><a href="home.html">首页</a></li>
+                <li><a href="function.html" >功能亮点</a></li>
+                <li><a href="news.html" >挑战达喀尔</a></li>
+                <li><a href="" >预约试驾</a></li>
+                <li><a href="film.html" >视听影音</a></li>
+            </ul>
+        </div>
+       
+
+		<div class="content pattern">
+			<div class="index">
+			    
+				<div class="swiper-container">			<!-- 滑动图片展示 -->
+                   <div class="swiper-wrapper">
+                      <div class="swiper-slide modeSlide"><img src="img/pattern1.jpg" alt="" class="mode"></div>
+                      <div class="swiper-slide modeSlide"><img src="img/pattern2.jpg" alt="" class="mode"></div>
+                      <div class="swiper-slide modeSlide"><img src="img/pattern3.jpg" alt="" class="mode"></div>
+                      <div class="swiper-slide modeSlide"><img src="img/pattern4.jpg" alt="" class="mode"></div>
+                   </div>
+                  
+               </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="rayed">
+                	<div class="layout layout06"></div>
+                	<img src="img/car.png" alt="" class="img"  id="rayed">
+                	<img src="img/nav.png" alt="" class="nav-icon">
+                </div>
+			</div>
+		</div>
+
+
+        <div class="footer">
+            <a href="tel:4008877108" class="tel">客服热线:400-8877-108</a>
+            <a href="#" class="weichat" >官方微信</a>
+        </div>  
+    </div>
+
+
+<script>        		<!--生成滑动图片展示-->
+  	var mySwiper = new Swiper ('.swiper-container', {
+	    	loop: true,
+	    	pagination: '.swiper-pagination',
+	        paginationClickable: true,
+	        spaceBetween: 30,
+	  })        
+  </script>
+
+
+</body>
+</html>
